@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+sitemap: https://lacosdagigi.netlify.app

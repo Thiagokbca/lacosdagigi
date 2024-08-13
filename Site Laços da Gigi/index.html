@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Laços da Gigi" content="Site de apresentação dos produtos da marca"/>
+    <meta name="keywords" content="laco pet, lacopet, laco pet luxo, lacopetluxo, laço pet, laçopet, laçopet, laçopetluxo,laços, lacos, laçospetshop, laçopetshop"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="author" content="thiagokbca"/>
+    <title>Laços da Gigi</title>
+    <link rel="icon" href="../img/Logo/Logo Laços da Gigi.webp" type="image"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&amp;family=Roboto:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v6.5.2/js/all.js"
+            defer
+    ></script>
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <!-- Logo -->
+      <div class="logo">
+        <a class="logo-content" href="#inicio">
+          <img data-src="../img/Logo/Logo Laços da Gigi.webp" class="lazy-load" width="45" height="45" aria-hidden="true" alt="logo laços da gigi" />
+          <span>Seja bem vindo</span>
+        </a>
+      </div>
+      <!-- Nav -->
+      <nav class="nav" aria-label="Menu de navegação" >
+        <ul class="nav-itens" role="menu">
+          <li><a href="#lacos-inicio" class="nav-item">Laços</a></li>
+          <li><a href="#gravatas" class="nav-item">Gravatas</a></li>
+          <li><a href="#colarinhos" class="nav-item">Colarinhos</a></li>
+          <li><a href="#tematicos" class="nav-item">Temáticos</a></li>
+          <li><a href="#contato" class="nav-item">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile" 
+      id="btn" 
+      aria-expanded="false" 
+      aria-label="Abrir menu" 
+      aria-haspopup="true" 
+      aria-controls="menu"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+    </header>
+
+    <main>
+      <!-- Abrir imagens em pop-up -->
+      <div id="popup" class="popup">
+        <span class="close">&times;</span>
+        <img class="popup-image" id="popupImage">
+      </div>
+
+      <!-- Banner -->
+      <section class="banner">
+        <h1 class="banner-title" id="inicio">Laços da Gigi</h1>
+          <!-- Video -->
+          <video autoplay muted loop>
+              <source src="../videos/Laços Da Gigi Intro.mp4" type="video/mp4">
+              Seu navegador não suporta o elemento de vídeo.
+          </video>
+
+      </section>
+      <!-- Laços -->
+      <section class="lacos" id="lacos-inicio">
+        <h2 class="lacos-title">Laços</h2>
+          <figure class="lacos-image">
+            <img data-src="../img/Laços/20240812_183059.webp" alt="Imagem de laços" class="lacos-img lazy-load" aria-hidden="true" onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Laços/20240812_183220.webp" alt="Imagem de laços" class="lacos-img lazy-load" aria-hidden="true" onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Laços/20240812_183330.webp" alt="Imagem de laços" class="lacos-img lazy-load" aria-hidden="true" onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Laços/20240812_183544.webp" alt="Imagem de laços" class="lacos-img lazy-load" aria-hidden="true" onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Laços/20240812_183703.webp" alt="Imagem de laços" class="lacos-img lazy-load" aria-hidden="true" onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Laços/20240812_183805.webp" alt="Imagem de laços" class="lacos-img lazy-load" aria-hidden="true" onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Laços/20240812_184201.webp" alt="Imagem de laços" class="lacos-img lazy-load" aria-hidden="true" onclick="abrirPopup(this.src)"/>
+          </figure>
+
+      </section>
+      <!-- Gravatas -->
+      <section class="plans" id="gravatas">
+        <h3 class="plans-title">Gravatas</h3>
+        <div class="plan-content">
+            <img data-src="../img/Gravatas/20240812_181806.webp" class="plan-img lazy-load" alt="Imagem de gravatas" aria-hidden="true" onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Gravatas/20240812_181929.webp" class="plan-img lazy-load" alt="Imagem de gravatas" aria-hidden="true" onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Gravatas/20240812_182243.webp" class="plan-img lazy-load" alt="Imagem de gravatas" aria-hidden="true" onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Gravatas/20240812_182356.webp" class="plan-img lazy-load" alt="Imagem de gravatas" aria-hidden="true" onclick="abrirPopup(this.src)"/>
+        </div>
+        <figure class="arrow">
+          <button class="btn-arrow prev">
+            <i class="fa-solid fa-chevron-left bx"></i>
+          </button>
+          <button class="btn-arrow next">
+            <i class="fa-solid fa-chevron-right bx"></i>
+          </button>
+        </figure>
+      </section>
+            <!-- Colarinhos -->
+      <section class="plans" id="colarinhos">
+        <h3 class="plans-title">Colarinhos</h3>
+        <div class="colarinhos">
+            <img data-src="../img/Colarinhos/20240812_180649.webp" class="plan-img lazy-load lazy-load" alt="Imagem de Colarinhos" aria-hidden="true" onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Colarinhos/20240812_182531.webp" class="plan-img lazy-load lazy-load" alt="Imagem de Colarinhos" aria-hidden="true" onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Colarinhos/20240812_182619.webp" class="plan-img lazy-load lazy-load" alt="Imagem de Colarinhos" aria-hidden="true" onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Colarinhos/20240812_182658.webp" class="plan-img lazy-load lazy-load" alt="Imagem de Colarinhos" aria-hidden="true" onclick="abrirPopup(this.src)"/>
+        </div>
+
+        <figure class="arrow">
+          <button class="btn-arrow prev1">
+            <i class="fa-solid fa-chevron-left bx"></i>
+          </button>
+          <button class="btn-arrow next1">
+            <i class="fa-solid fa-chevron-right bx"></i>
+          </button>
+        </figure>
+      </section>
+
+      <!-- Temáticos -->
+      <section class="plans" id="tematicos">
+        <h3 class="plans-title">Temáticos</h3>
+        <div class="tematicos">
+            <img data-src="../img/Tematicos/UD_lacosdagigiiacessoriospet_3247745015203161574_46865605267_12_08_2024.webp" class="plan-img lazy-load" alt="Imagem de laços temáticos" aria-hidden="true"  onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Tematicos/UD_lacosdagigiiacessoriospet_3247746727007493798_46865605267_12_08_2024.webp" class="plan-img lazy-load" alt="Imagem de laços temáticos" aria-hidden="true"  onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Tematicos/UD_lacosdagigiiacessoriospet_3247749980638371748_46865605267_12_08_2024.webp" class="plan-img lazy-load" alt="Imagem de laços temáticos" aria-hidden="true"  onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Tematicos/UD_lacosdagigiiacessoriospet_3249993260897286617_46865605267_12_08_2024.webp" class="plan-img lazy-load" alt="Imagem de laços temáticos" aria-hidden="true"  onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Tematicos/UD_lacosdagigiiacessoriospet_3249995227707139302_46865605267_12_08_2024.webp" class="plan-img lazy-load" alt="Imagem de laços temáticos" aria-hidden="true"  onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Tematicos/UD_lacosdagigiiacessoriospet_3261942019340847265_46865605267_12_08_2024.webp" class="plan-img lazy-load" alt="Imagem de laços temáticos" aria-hidden="true"  onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Tematicos/UD_lacosdagigiiacessoriospet_3261943106923752432_46865605267_12_08_2024.webp" class="plan-img lazy-load" alt="Imagem de laços temáticos" aria-hidden="true"  onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Tematicos/UD_lacosdagigiiacessoriospet_3269199976470390287_46865605267_12_08_2024.webp" class="plan-img lazy-load" alt="Imagem de laços temáticos" aria-hidden="true"  onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Tematicos/UD_lacosdagigiiacessoriospet_3291715901043288450_46865605267_12_08_2024.webp" class="plan-img lazy-load" alt="Imagem de laços temáticos" aria-hidden="true"  onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Tematicos/UD_lacosdagigiiacessoriospet_3291718239124668778_46865605267_12_08_2024.webp" class="plan-img lazy-load" alt="Imagem de laços temáticos" aria-hidden="true"  onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Tematicos/UD_lacosdagigiiacessoriospet_3291724978934839350_46865605267_12_08_2024.webp" class="plan-img lazy-load" alt="Imagem de laços temáticos" aria-hidden="true"  onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Tematicos/UD_lacosdagigiiacessoriospet_3331758070232109409_46865605267_12_08_2024.webp" class="plan-img lazy-load" alt="Imagem de laços temáticos" aria-hidden="true"  onclick="abrirPopup(this.src)"/>
+            <img data-src="../img/Tematicos/UD_lacosdagigiiacessoriospet_3331764840535032908_46865605267_12_08_2024.webp" class="plan-img lazy-load" alt="Imagem de laços temáticos" aria-hidden="true"  onclick="abrirPopup(this.src)"/>
+        </div>
+
+        <figure class="arrow">
+          <button class="btn-arrow prev2">
+            <i class="fa-solid fa-chevron-left bx"></i>
+          </button>
+          <button class="btn-arrow next2">
+            <i class="fa-solid fa-chevron-right bx"></i>
+          </button>
+        </figure>
+      </section>
+
+
+      <div class="message">Agradeçemos sua visita</div>
+
+    </main>
+
+          <!-- Footer -->
+    <footer class="footer" id="contato">
+        <section class="footer-content">
+          <article class="footer-social">
+            <h4 class="footer-title">Pedidos direto pelo WhatsApp</h4>
+              <p class="footer-description">Siga-nos nas redes sociais</p>
+              <li class="icons-list">
+                <a href="https://www.instagram.com/lacosdagigiiacessoriospet/" aria-label="Link do Instagram" target="_blank" class="icons-links"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/lacosdagigiiacessoriospet/" aria-label="Link do Facebook" target="_blank" class="icons-links"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://wa.me/554799505390?text=Olá, seja bem vindo ao WhatsApp Laços da Gigi." aria-label="Link do WhatsApp" target="_blank" class="icons-links"><i class="fa-brands fa-whatsapp"></i></a>
+              </li>
+          </article>
+        </section>
+    </footer>
+    <script src="../js/script.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,365 @@
+:root {
+  --font-header: "Poppins", sans-serif;
+  --font-body: "Roboto", sans-serif;
+  --font-card: "hind", sans-serif;
+  --font-logo: "Great Vibes", static;
+  --font-size-small: 1rem;
+  --font-size-medium: 1.2rem;
+  --font-size-large: 1.5rem;
+  --font-size-xlarge: 2rem;
+  --font-size-xxlarge: 3rem;
+  --font-size-xxxlarge: 4rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(253, 164, 186, 0.46);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  background: rgba(253, 164, 186, 0.46);
+  font-family: var(--font-header);
+  width: 100%;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  z-index: 1;
+}
+.btn-mobile {
+  display: none;
+}
+.logo-content {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
+/* Menu */
+.nav-itens {
+  display: flex;
+  color: black;
+  font-weight: 500;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-item {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+/* banner */
+.banner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.053);
+}
+video {
+  position: absolute;
+  object-fit: contain;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  z-index: -1;
+}
+
+.banner-title {
+  margin-top: 4rem;
+  font-size: 13rem;
+  font-family: var(--font-logo);
+  color: rgb(253, 164, 186);
+  font-weight: 900;
+  text-align: center;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  opacity: 0.8;
+}
+/* Laços */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  animation: fadeIn 0.6s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.close {
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 60px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.popup-image {
+  margin: auto;
+  display: block;
+  width: auto;
+  max-height: 100%;
+}
+
+.lacos-title {
+  text-align: center;
+  font-size: 13rem;
+  font-family: var(--font-logo);
+  color: rgb(253, 164, 186);
+  font-weight: 900;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  margin: 4rem 0;
+}
+.lacos {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.lacos-image {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.lacos-img {
+  width: 45%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 4rem 0;
+  box-shadow: 11px 10px 5px 0px rgba(0, 0, 0, 0.44);
+  -webkit-box-shadow: 11px 10px 5px 0px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 11px 10px 5px 0px rgba(0, 0, 0, 0.44);
+}
+.arrow {
+  display: none;
+}
+/* Plan-cards */
+.plans-title {
+  font-size: 13rem;
+  font-family: var(--font-logo);
+  color: rgb(253, 164, 186);
+  font-weight: 900;
+  text-align: center;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  margin: 4rem 0;
+}
+.plan-content,
+.colarinhos,
+.tematicos {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.plan-img {
+  width: 50%;
+  height: 550px;
+  display: flex;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 11px 10px 5px 0px rgba(0, 0, 0, 0.44);
+  -webkit-box-shadow: 11px 10px 5px 0px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 11px 10px 5px 0px rgba(0, 0, 0, 0.44);
+  margin: 1rem 1rem;
+}
+.message {
+  font-size: 11rem;
+  font-family: var(--font-logo);
+  color: rgb(253, 164, 186);
+  font-weight: 900;
+  text-align: center;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  margin: 4rem 0;
+}
+/* Footer */
+.footer {
+  width: 100%;
+  background: rgba(253, 164, 186, 0.46);
+  color: black;
+}
+.footer-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-title {
+  font-size: 2.5rem;
+  color: black;
+  font-weight: 700;
+  padding: 1rem 0 0.6rem 0;
+  text-align: center;
+}
+.footer-description {
+  font-size: 1.9rem;
+  color: black;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.icons-list {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.icons-links {
+  font-size: 3rem;
+  color: rgb(204, 30, 184);
+}
+img.lazy-load {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+img.lazy-load.loading {
+  opacity: 1;
+}
+
+/* Dimensionamento para diferentes tipos de tela */
+
+@media only screen and (max-width: 900px) {
+}
+@media only screen and (max-width: 1024px) {
+  video {
+    height: 70rem;
+  }
+  .header {
+    width: 100vw;
+    height: 60px;
+  }
+  .bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: black;
+    margin: 5px auto;
+    border-radius: 5px;
+    transition: transform 0.4s ease;
+  }
+  .btn-mobile {
+    border: none;
+    background: none;
+    padding: 0.3rem;
+    display: block;
+    cursor: pointer;
+  }
+  .btn-mobile.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .btn-mobile.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .btn-mobile.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav {
+    display: none;
+  }
+  .nav.active {
+    display: block;
+  }
+
+  .nav-itens {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background: rgba(253, 164, 186, 0.46);
+    top: 60px;
+    padding: 40px;
+    right: 0px;
+    align-items: center;
+    height: 300px;
+  }
+  .banner-title {
+    font-size: 8rem;
+    opacity: 0.8;
+    width: 100%;
+    opacity: 1;
+  }
+  .banner {
+    width: 100%;
+  }
+  .lacos-title,
+  .plans-title {
+    font-size: 6rem;
+  }
+  .lacos-img {
+    width: 95%;
+    height: 400px;
+    margin: 2rem;
+    object-fit: fill;
+  }
+  .plan-img {
+    width: 92%;
+    height: 400px;
+    object-fit: fill;
+  }
+  .message {
+    font-size: 5rem;
+  }
+  .footer-title {
+    font-size: 1.8rem;
+  }
+  .footer-description {
+    font-size: 1.2rem;
+  }
+  .icons-links {
+    font-size: 2rem;
+  }
+  .arrow {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+  }
+  .btn-arrow {
+    border: none;
+    margin: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+    background: rgba(253, 164, 186, 0.46);
+  }
+  .bx {
+    font-size: var(--font-size-medium);
+    padding: 10px 15px;
+    color: white;
+  }
+}
